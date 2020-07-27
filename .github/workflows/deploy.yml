@@ -12,4 +12,4 @@ jobs:
       with:
         username: ${{ secrets.DEPLOYER_USERNAME }}
         password: ${{ secrets.DEPLOYER_PASSWORD }}
-        remote_url: git@github.com:amazyyy/amazyyy.github.io.git
+        remote_url: https://github.com/amazyyy/amazyyy.github.io.git
