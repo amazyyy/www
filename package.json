@@ -15,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build && echo amazyyy.com > ./build/CNAME && cp README.md ./build",
     "eject": "react-scripts eject",
-    "precommit": "npx lint-staged",
+    // "precommit": "npx lint-staged",
+    "precommit": "",
     "test": "standard ./src"
   },
   "lint-staged": {

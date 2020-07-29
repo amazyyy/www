@@ -1,0 +1,69 @@
+.portfolio-component {
+  .demo-component {
+    width:100%;
+    position: relative;
+    height: 500px;
+    padding: 100px 0px 10px;
+    .intro-container {
+      position: absolute;
+      top: 180px;
+      left: 15%;
+      display: block;
+      .project-title {
+        font-weight: 900;
+        font-size: 3rem;
+        letter-spacing: 4px;
+      }
+      .project-point {
+        .content {
+          font-size: 1.4rem;
+          opacity: 0.5;
+          font-weight: 700;
+        }
+      }
+    }
+    .demo-image {
+      float: right;
+      width: 60%;
+      min-width: 500px;
+      max-width: 800px;
+      img {
+        width: 100%;
+      }
+    }
+    @media (max-width: 760px) {
+      padding-top: 180px;
+      height: 400px;
+      .demo-image {
+        width: 100%;
+      }
+      .intro-container{
+        top: 20px;
+        left: 10px;
+        .project-title {
+          font-size: 1.7rem;
+        }
+        .project-point {
+          .content {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+
+    &.left {
+      .intro-container {
+        right: 5%;
+        left: auto;
+      }
+      .demo-image {
+        float: left;
+      }
+      @media (max-width: 760px) {
+        .intro-container{
+          left: 10px;
+        }
+      }
+    }
+  }
+}

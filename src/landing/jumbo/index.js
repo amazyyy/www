@@ -1,4 +1,10 @@
 import React from 'react'
 import './style.scss'
 
-export default () => (<div className='jumbo-component' />)
+export default () => (<div className='jumbo-component'>
+  <div className='intro-container'>
+    <div className='big-title'>Amazing</div>
+    <div className='sub-title'>artisanship meets software engineer</div>
+    <div className='sub-sub-title'>Focus on smart contract auditing, consulting, and dApp engineering, </div>
+  </div>
+</div>)
