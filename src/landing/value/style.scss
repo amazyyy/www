@@ -1,0 +1,84 @@
+@import "../../styles/variables.scss";
+
+.value-component.container {
+  padding-bottom: 100px;
+  .item-component {
+    margin-top: 50px;
+    position: relative;
+    .col-xs-12 {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+    .item {
+      padding: 10px;
+      text-align: center;
+      background: white;
+      box-shadow: 0 0 50px rgba(black, 0.1);
+      border-radius: 10px;
+      margin-bottom: 50px;
+      height: 200px;
+      margin-top: 30px;
+      .info-container {
+        transform: translateY(-30px);
+        img {
+          margin-top: 5px;
+          max-height: 64px;
+          max-width: 300px;
+        }
+      }
+      .title {
+        font-weight: 800;
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.8);
+      }
+      .details {
+        font-size: 0.9rem;
+        padding-top: 10px;
+        color: rgb(135, 135, 135);
+        font-weight: 600;
+      }
+      .icon-card {
+        transform: translateY(-50px);
+        background: white;
+        box-shadow: 0px 8px 20px -2px rgba(0,0,0,0.1);
+        display: inline-block;
+        padding: 18px;
+        height: 70px;
+        width: 70px;
+        border-radius: 100px;
+
+        color: white;
+          background: $gold-color;
+        i.fa {
+          font-size: 2rem;
+        }
+      }
+      @media (max-width: 760px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        .title {
+          font-size: 2rem;
+        }
+        .details {
+          font-size: 1.3rem;
+        }
+        .info-container {
+          img {
+            max-height: 80px;
+          }
+        }
+      }
+      &:hover, &:active{
+        .title {
+          color: rgba(0, 0, 0, 1);
+        }     
+        .details {
+          color: rgb(120, 120, 120);
+        }   
+        .icon-card {
+          transition: .2s size;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.portfolio-component {
+  .demo-component {
+    padding: 30px;
+    .intro-col {
+      padding-top: 200px;
+      .project-title {
+        font-weight: 900;
+        font-size: 3rem;
+        text-transform: uppercase;
+      }
+      .project-point {
+        .content {
+          font-size: 1.4rem;
+          opacity: 0.5;
+          font-weight: 700;
+        }
+      }
+      .action-container {
+        padding-top: 20px;
+        .button {
+          padding: 15px 30px;
+          background: $gold-color;
+          color: white;
+          font-weight: 800;
+          display: inline-block;
+          border-radius: 100px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          cursor: pointer;
+          user-select: none;
+          outline: none;
+          &:hover{
+            background: lighten($color: $gold-color, $amount: 10%);
+            transition: all 0.1s;
+            transform: scale(0.98);
+          }
+          &:active{
+            background: lighten($color: $gold-color, $amount: 10%);
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+  }
+}
