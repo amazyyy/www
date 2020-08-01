@@ -1,8 +1,7 @@
 import React from 'react'
 import './style.scss'
 
-export default () => (<div className='tech-stack-component container'>
-  <div className='landing-big-title'>Trustworthy</div>
+export default () => (<div className='service-component container'>
   <div className='stack-component row'>
     <div className='col-sm-12 col-md-6 col-lg-3'>
       <div className='item'>
