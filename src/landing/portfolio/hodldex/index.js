@@ -15,7 +15,7 @@ export default () => (<div className='demo-component row'>
       </div>
     </div>
     <div className='action-container'>
-      <a target='_blank' href='https://www.hodldex.io'><div className='button'>Visit</div></a>
+      <a target='_blank' rel='noopener noreferrer' href='https://www.hodldex.io'><div className='button'>Visit</div></a>
     </div>
   </div>
   <div className='image-col col-sm-12 col-md-6'>

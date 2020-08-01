@@ -23,7 +23,7 @@ export default () => (<div className='demo-component row'>
         <div className='content'>{p.content}</div>
       </div>)}
       <div className='action-container'>
-        <a target='_blank' href='https://mapitout.github.io/#/maps'><div className='button'>Visit</div></a>
+      <a target='_blank' rel='noopener noreferrer' href='https://mapitout.github.io/#/maps'><div className='button'>Visit</div></a>
       </div>
     </div>
   </div>
