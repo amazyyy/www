@@ -1,18 +1,14 @@
+@import '../../styles/variables.scss';
+
 .portfolio-component {
   .demo-component {
-    width:100%;
-    position: relative;
-    height: 500px;
-    padding: 100px 0px 10px;
-    .intro-container {
-      position: absolute;
-      top: 180px;
-      left: 15%;
-      display: block;
+    padding: 50px;
+    .intro-col {
+      padding-top: 200px;
       .project-title {
         font-weight: 900;
         font-size: 3rem;
-        letter-spacing: 4px;
+        text-transform: uppercase;
       }
       .project-point {
         .content {
@@ -21,47 +17,29 @@
           font-weight: 700;
         }
       }
-    }
-    .demo-image {
-      float: right;
-      width: 60%;
-      min-width: 500px;
-      max-width: 800px;
-      img {
-        width: 100%;
-      }
-    }
-    @media (max-width: 760px) {
-      padding-top: 180px;
-      height: 400px;
-      .demo-image {
-        width: 100%;
-      }
-      .intro-container{
-        top: 20px;
-        left: 10px;
-        .project-title {
-          font-size: 1.7rem;
-        }
-        .project-point {
-          .content {
-            font-size: 1.1rem;
+      .action-container {
+        padding-top: 20px;
+        .button {
+          padding: 15px 30px;
+          background: $gold-color;
+          color: white;
+          font-weight: 800;
+          display: inline-block;
+          border-radius: 100px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          cursor: pointer;
+          user-select: none;
+          outline: none;
+          &:hover{
+            background: lighten($color: $gold-color, $amount: 10%);
+            transition: all 0.1s;
+            transform: scale(0.98);
           }
-        }
-      }
-    }
-
-    &.left {
-      .intro-container {
-        right: 5%;
-        left: auto;
-      }
-      .demo-image {
-        float: left;
-      }
-      @media (max-width: 760px) {
-        .intro-container{
-          left: 10px;
+          &:active{
+            background: lighten($color: $gold-color, $amount: 10%);
+            transform: scale(0.95);
+          }
         }
       }
     }
