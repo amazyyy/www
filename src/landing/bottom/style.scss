@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.bottom-component {
+  padding: 30px;
+  background: $gold-color;
+  text-align: center;
+  color: white;
+  .item-component {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      opacity: 0.8;
+      padding: 0px 20px;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    .logo {
+      font-weight: 900;
+    }
+    .link {
+      font-size: 1.7rem;
+    }
+    .link, .email {
+      cursor: pointer;
+      a {
+        color: white;
+      }
+    }
+    @media (max-width: 760px) {
+      flex-direction: column;
+      div{
+        font-size: 1.3rem;
+        padding: 10px;
+      }
+      .link {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  @media (max-width: 760px) {
+    background: white;
+    padding-bottom: 100px;
+    border-bottom: 20px solid $gold-color;
+    .item-component {
+      color: $black-color;
+      .link a, .email a {
+        color: $black-color;
+      }
+    }
+  }
+}

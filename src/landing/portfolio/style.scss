@@ -43,5 +43,13 @@
         }
       }
     }
+    .image-col {
+      @media (max-width: 760px) {
+        img {
+          transform: translateX(-50px);
+          height: 500px;
+        }
+      }
+    }
   }
 }
