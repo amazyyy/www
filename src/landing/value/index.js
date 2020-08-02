@@ -2,7 +2,7 @@ import React from 'react'
 import './style.scss'
 
 export default () => (<div className='value-component container'>
-  <div className='landing-big-title'>Why us</div>
+  <div className='landing-big-title'>Agility</div>
   <div className='item-component row'>
     <div className='col-xs-12 col-sm-6 col-md-3'>
       <div className='item'>
@@ -22,7 +22,7 @@ export default () => (<div className='value-component container'>
         </div>
         <div className='info-container'>
           <div className='title'>Effective</div>
-          <div className='details'>From idea to product.</div>
+          <div className='details'>We listen to your demand and come up with a one-in-a-million solution.</div>
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@ export default () => (<div className='value-component container'>
         </div>
         <div className='info-container'>
           <div className='title'>Efficient</div>
-          <div className='details'>Delivery fast, compact team that can delivery production ready software in less time and higher quality.</div>
+          <div className='details'>Delivery production ready software in less time and higher quality.</div>
         </div>
       </div>
     </div>
