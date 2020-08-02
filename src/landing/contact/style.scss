@@ -1,0 +1,62 @@
+@import "../../styles/variables.scss";
+
+.contact-component {
+  padding: 50px 0px 100px;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  .contact-form {
+    background: white;
+    box-shadow: 0 0 50px rgba(black, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+    .label {
+      padding: 0px 0px 5px 0px;
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+    .margin-top {
+      margin-top: 20px;
+    }
+    input, textarea {
+      outline: none;
+      border-radius: 5px;
+      border: 2px solid $silver-color;
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 1.4rem;
+      &:active,&:hover {
+        border: 2px solid $gold-color;
+      }
+      &:focus {
+        box-shadow: 0 0 20px rgba(black, 0.1);
+        border: 2px solid $gold-color;
+      }
+    }
+    .action {
+      padding-top: 20px;
+      text-align: right;
+    }
+    .button {
+      padding: 15px 30px;
+      background: $gold-color;
+      color: white;
+      font-weight: 800;
+      display: inline-block;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      user-select: none;
+      outline: none;
+      &:hover{
+        background: lighten($color: $gold-color, $amount: 10%);
+        transition: all 0.1s;
+        transform: scale(0.98);
+      }
+      &:active{
+        background: lighten($color: $gold-color, $amount: 10%);
+        transform: scale(0.95);
+      }
+    }
+  }
+}

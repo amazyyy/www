@@ -1,7 +1,8 @@
 @import "../../styles/variables.scss";
 
-.value-component.container {
-  padding-bottom: 100px;
+.value-component {
+  padding: 50px 0px;
+  background: rgba($black-color, 0.03);
   .item-component {
     margin-top: 50px;
     position: relative;
@@ -12,12 +13,10 @@
     .item {
       padding: 10px;
       text-align: center;
-      background: white;
-      box-shadow: 0 0 50px rgba(black, 0.1);
       border-radius: 10px;
       margin-bottom: 50px;
-      height: 200px;
       margin-top: 30px;
+      height: 200px;
       .info-container {
         transform: translateY(-30px);
         img {
@@ -28,14 +27,14 @@
       }
       .title {
         font-weight: 800;
-        font-size: 1.2rem;
-        color: rgba(0, 0, 0, 0.8);
+        font-size: 1.3rem;
+        color: $black-color;
       }
       .details {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding-top: 10px;
-        color: rgb(135, 135, 135);
-        font-weight: 600;
+        color: $silver-color;
+        font-weight: 700;
       }
       .icon-card {
         transform: translateY(-50px);
@@ -45,10 +44,8 @@
         padding: 18px;
         height: 70px;
         width: 70px;
-        border-radius: 100px;
-
-        color: white;
-          background: $gold-color;
+        border-radius: 20px;
+        color: $gold-color;
         i.fa {
           font-size: 2rem;
         }
@@ -56,7 +53,8 @@
       @media (max-width: 760px) {
         padding-left: 30px;
         padding-right: 30px;
-        height: 280px;
+        height: 200px;
+        margin-top: 80px;
         .title {
           font-size: 2rem;
         }
@@ -69,17 +67,8 @@
           }
         }
       }
-      &:hover, &:active{
-        .title {
-          color: rgba(0, 0, 0, 1);
-        }     
-        .details {
-          color: rgb(120, 120, 120);
-        }   
-        .icon-card {
-          transition: .2s size;
-        }
-      }
+      // &:hover, &:active{
+      // }
     }
   }
 }
