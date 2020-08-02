@@ -10,7 +10,7 @@ export default () => {
       <div className='landing-big-title'>Let's build</div>
       <div className='contact-form'>
         <div>
-          <div className='label'>Project Link</div>
+          <div className='label'>Project Link (optional)</div>
           <input value={url} placeholder='https://amazing-project.com' type='url' onChange={(e)=>setUrl(e.target.value)} />
         </div>
         <div className='margin-top'>
