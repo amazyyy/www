@@ -7,7 +7,7 @@ export default () => {
 
   return (<div className='contact-component' id='build'>
     <div className='container'>
-      <div className='landing-big-title'>Let's build</div>
+      <div className='landing-big-title'>About yours</div>
       <div className='contact-form'>
         <div>
           <div className='label'>Project Link (optional)</div>
