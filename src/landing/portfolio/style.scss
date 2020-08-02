@@ -5,6 +5,9 @@
     padding: 30px;
     .intro-col {
       padding-top: 200px;
+      @media (max-width: 760px) {
+        padding-top: 0px;
+      }
       .project-title {
         font-weight: 900;
         font-size: 3rem;
@@ -42,6 +45,7 @@
           }
         }
       }
+      
     }
     .image-col {
       @media (max-width: 760px) {
