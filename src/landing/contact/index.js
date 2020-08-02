@@ -15,7 +15,7 @@ export default () => {
         </div>
         <div className='margin-top'>
           <div className='label'>What do you want to achieve</div>
-          <textarea value={details} placeholder='1~3 sentences' rows='5' onChange={(e)=>setDetails(e.target.value)}/>
+          <textarea value={details} placeholder='0.5 ~ 5 sentences' rows='5' onChange={(e)=>setDetails(e.target.value)}/>
         </div>
         <div className='action'>
           <a href={`mailto:teamamazyyy@gmail.com?subject=${encodeURI(`[*Important] ${url}`)}&body=${encodeURI(`
