@@ -4,6 +4,7 @@ import Jumbo from './jumbo'
 import Portfolio from './portfolio'
 import Service from './service'
 import Value from './value'
+// import Attraction from './attraction'
 import Contact from './contact'
 import Bottom from './bottom'
 import './style.scss'
@@ -15,6 +16,7 @@ export default () => (
     <Service />
     <Portfolio />
     <Value />
+    {/* <Attraction /> */}
     <Contact />
     <Bottom />
   </div>
