@@ -6,7 +6,7 @@ export default () => {
   const [details, setDetails] = useState('');
 
   return (<div className='contact-component' id='build'>
-    <div className='container'>
+    <div className='container' id='contact'>
       <div className='landing-big-title'>About yours</div>
       <div className='contact-form'>
         <div>
